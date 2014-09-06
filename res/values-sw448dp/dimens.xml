@@ -1,0 +1,87 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="leftui_leftmargin_one">160dp</dimen>
+    <dimen name="leftui_leftmargin_two">100dp</dimen>
+    <dimen name="rightui_rightmargin">60dp</dimen>
+    <dimen name="textsize_small">26sp</dimen>
+    <dimen name="textsize_titsmall">20sp</dimen>
+    <dimen name="textsize_biger">32sp</dimen>
+    <dimen name="textsize_bigers">26sp</dimen>
+    <dimen name="textsize_bigddder">500sp</dimen>
+    <dimen name="text_openphone_padding_top">196dp</dimen>
+    <dimen name="button_divice_padding_top">348dp</dimen>
+    <dimen name="text_connect_margin_top">50dp</dimen>
+    <dimen name="line_margin_top">136dp</dimen>
+    <dimen name="line_with">16dp</dimen>
+    <dimen name="line_long">548dp</dimen>
+    <dimen name="text_right_padding_top">256dp</dimen>
+    <dimen name="code_imge_margin_top">70dp</dimen>
+    <dimen name="name_code_margin_top">12dp</dimen>
+    <dimen name="code_with_hight">200dp</dimen>
+    <dimen name="bt_divice_display_with">448dp</dimen>
+    <dimen name="bt_divice_display_hight">84dp</dimen>
+    <dimen name="divice_imge_with">76dp</dimen>
+    
+    <!-- connect_activity_main -->
+
+    <dimen name="connect_relativeLayout_back_marginTop">50dp</dimen>
+    <dimen name="connect_layout_marginleft">20dp</dimen>
+    <dimen name="connect_layout_marginright">28dp</dimen>
+    <dimen name="connect_im_margintop">15dp</dimen>
+    <dimen name="connect_relativeLayout_back_Left">78dp</dimen>
+    <dimen name="connect_relativeLayout_back1_Left">85dp</dimen>
+    <dimen name="connect_relativeLayout_back1_top">44dp</dimen>
+    <dimen name="connect_ImageView_top">28dp</dimen>
+    <dimen name="connect__textViewlift">28dp</dimen>
+    <dimen name="connect__textViewtop">26dp</dimen>
+    <dimen name="connect__im_lift">25dp</dimen>
+    <dimen name="connect__im_top">28dp</dimen>
+    <dimen name="connect__textView2top">22dp</dimen>
+    <dimen name="connect__im_left">20dp</dimen>
+    <dimen name="connect__phdw_left">50dp</dimen>
+    <dimen name="connect__fg">150dp</dimen>
+    <dimen name="connect__textView2fflf">100dp</dimen>
+    <dimen name="connect__textView2fftop">15dp</dimen>
+    <dimen name="connect__yhback_bottom">44dp</dimen>
+    <!-- new -->
+    <!-- sigleitem -->
+
+    <dimen name="sigleitem_padding_bottom">10dp</dimen>
+    <dimen name="sigleitem_padding_left">50dp</dimen>
+    <dimen name="sigleitem_padding_top">10dp</dimen>
+    <dimen name="sigleitem_padding_right">50dp</dimen>
+    <dimen name="sigleitem_width">344dp</dimen>
+    <dimen name="sigleitem_height">100dp</dimen>
+    <!-- main.xml -->
+    <dimen name="main_appname_padding">8dp</dimen>
+    <dimen name="main_frame_margintop">40dp</dimen>
+    <dimen name="main_tv_modifyname_width">380dp</dimen>
+    <dimen name="main_tv_modifyname_height">60dp</dimen>
+    <dimen name="main_btn_modifyname_width">472dp</dimen>
+    <dimen name="main_btn_modifyname_height">56dp</dimen>
+    <dimen name="main_appic_padding">28dp</dimen>
+    <dimen name="main_layout_marginTop">45dp</dimen>
+    <dimen name="main_modif_marginTop">25dp</dimen>
+    <!-- local_name.xml -->
+    <dimen name="dialog_width">820dp</dimen>
+    <dimen name="dialog_height">544dp</dimen>
+    <dimen name="dialog_rewidth">584dp</dimen>
+    <dimen name="dialog_reheight">320dp</dimen>
+    <dimen name="dialog_reheight_top">28dp</dimen>
+    <dimen name="dialog_layout_marginTop">84dp</dimen>
+    <dimen name="dialog_title_padding">20dp</dimen>
+    <dimen name="dialog_listview_width">584dp</dimen>
+    <dimen name="dialog_listview_height">320dp</dimen>
+    <dimen name="dialog_listview_margin_bottom">64dp</dimen>
+    <dimen name="dialog_listview_divider_height">10dp</dimen>
+    <dimen name="dialog_listview_padding_bottom">20dp</dimen>
+    <dimen name="dialog_listview_padding_top">20dp</dimen>
+    <dimen name="dialog_listview_padding_left">48dp</dimen>
+    <dimen name="dialog_listview_padding_right">48dp</dimen>
+    <!-- about_dialog.xml -->
+    <dimen name="about_dialog_width">820dp</dimen>
+    <dimen name="about_dialog_height">544dp</dimen>
+    <dimen name="about_dialog_layout_marginTop">84dp</dimen>
+
+</resources>

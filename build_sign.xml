@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="ant" default="install">
+	<property name="apk" value="./bin/HomeActivity.apk" />
+	<property name="signedapk" value="./bin/TVKanKan.apk" />
+	<property name="packagename" value="com.letv.smartControl" />
+	<property name="lauchActivity" value="com.letv.screenui.activity.HomeActivity" />
+	<property name="adbpath" value="/home/shixueqiang/workspace/android-sdk-linux/platform-tools/adb" />
+	<target name="signed">
+		<exec executable="java" failonerror="true">
+			<arg value="-jar" />
+			<arg value="signapk.jar" />
+			<arg value="platform.x509.pem" />
+			<arg value="platform.pk8" />
+			<arg value="${apk}" />
+			<arg value="${signedapk}" />
+		</exec>
+	</target>
+	<target name="install" depends="signed">
+		<exec executable="${adbpath}" failonerror="true">
+			<arg value="uninstall" />
+			<arg value="${packagename}" />
+		</exec>
+		<exec executable="${adbpath}" failonerror="true">
+			<arg value="install" />
+			<arg value="${signedapk}" />
+		</exec>
+		<exec executable="${adbpath}" failonerror="true">
+			<arg value="shell" />
+			<arg value="am" />
+			<arg value="start" />
+			<arg value="-n" />
+			<arg value="${packagename}/${lauchActivity}" />
+		</exec>
+	</target>
+</project>

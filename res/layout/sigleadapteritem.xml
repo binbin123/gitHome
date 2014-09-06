@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/sigleitem_width"
+    android:layout_height="@dimen/sigleitem_height"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:paddingBottom="@dimen/sigleitem_padding_bottom"
+    android:paddingLeft="@dimen/sigleitem_padding_left"
+    android:paddingRight="@dimen/sigleitem_padding_right"
+    android:paddingTop="@dimen/sigleitem_padding_top" >
+
+    <TextView
+        android:id="@+id/item_yh_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/textsize_small" />
+
+    <ImageView
+        android:id="@+id/item_yh_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/choose_on"
+        android:visibility="invisible" />
+
+</LinearLayout>

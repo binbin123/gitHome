@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/screen_mask"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/dialog_height"
+        android:background="@drawable/toast_bg" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_layout_marginTop"
+            android:gravity="center"
+            android:text="@string/dialog_title"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textsize_biger" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dialog_rewidth"
+            android:layout_height="@dimen/dialog_reheight"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dialog_reheight_top"
+            android:background="@drawable/daily_record_default_bg" >
+
+            <ListView
+                android:id="@+id/names_yh_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="28dp"
+                android:layout_marginLeft="@dimen/dialog_listview_padding_left"
+                android:layout_marginRight="@dimen/dialog_listview_padding_right"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/scrollbar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/scrollbar" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

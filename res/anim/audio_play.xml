@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:visible="true">
+
+    <item
+        android:drawable="@drawable/player_audio_push_01"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_02"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_03"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_04"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_05"
+        android:duration="300">
+    </item><!--
+    <item
+        android:drawable="@drawable/player_audio_push_06"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_07"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_08"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_09"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_10"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_11"
+        android:duration="300">
+    </item>
+    <item
+        android:drawable="@drawable/player_audio_push_12"
+        android:duration="300">
+    </item> 
+ -->
+</animation-list>

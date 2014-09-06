@@ -1,0 +1,225 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+     <ImageView
+        android:id="@+id/audio_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/player_audio_push_cover_base"
+        android:layout_centerInParent="true" />
+	 <ImageView
+		android:id="@+id/player_view_music_image_disk"
+		android:layout_width="152dp"
+		android:layout_height="308dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginRight="400dp"
+		android:layout_marginTop="159dp"
+		android:background="@anim/audio_play" /> 
+    <TextView
+        android:id="@+id/play_ctl_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="51dp"
+        android:textSize="48sp" />
+    <RelativeLayout
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp" >
+    <TextView
+        android:id="@+id/song_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textSize="42sp" /> 
+  </RelativeLayout>   
+  <!--
+  <RelativeLayout 
+    android:id="@+id/play_now_loading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:focusable="false"
+    android:visibility="invisible"
+     >
+
+  <ImageView
+        android:id="@+id/play_loading_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:visibility="visible" 
+        android:background="@anim/audio_play_loading_anim" 
+        />   
+   </RelativeLayout>     
+   -->
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/play_loading" />
+
+    <include
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        layout="@layout/play_buffering_loading" />
+
+    <ImageView
+        android:id="@+id/pause_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_playbar_stop"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/sound_view"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/play_vol_bg"
+        android:paddingBottom="20dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/sound_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/sound_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/play_sound_on_ico" />
+
+            <TextView
+                android:id="@+id/sound_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="#ffffff"
+                android:textSize="48sp" />
+        </RelativeLayout>
+
+        <com.letv.dmr.VolumeProgressBar
+            android:id="@+id/seekbar_volume"
+            android:layout_width="190dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/sound_linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp" />
+    </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/cotroller_panel_rl"
+        android:layout_width="1106dip"
+        android:layout_height="91dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/playbar_bg"
+        android:visibility="gone" >
+
+		<!-- 进度条播放状态：播放、暂停、快进、快退 -->
+	<LinearLayout
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:orientation="horizontal" 
+  	>
+        <ImageView
+            android:id="@+id/imageview_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dip"
+            android:layout_marginRight="13dip"
+            android:background="@drawable/ic_playbar_button_play"
+            android:focusable="false" />
+
+		<!-- 系统自带进度条，在Java代码中将其转换为SeekBar即可使用 -->
+        <SeekBar
+            android:id="@+id/progress_sb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dip"
+            android:layout_weight ="1"
+            android:focusable="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dip"
+         >
+         <!-- 视频时间总长度 -->
+		<TextView
+                android:id="@+id/position_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:text="@string/str_durtion"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+			<!-- 中间分隔符 -->
+            <TextView
+                android:id="@+id/duration_split_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/position_tv"
+                android:focusable="false"
+                android:text= "@string/str_split"
+                android:textColor="@android:color/white"
+               android:textSize="24sp" />		
+			<!-- 视频当前播放时间点 -->
+            <TextView
+                android:id="@+id/duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/duration_split_tv"
+                android:focusable="false"
+                android:text="@string/str_durtion"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+       </LinearLayout> 
+    </RelativeLayout>
+
+</RelativeLayout>

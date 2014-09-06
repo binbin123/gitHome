@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">TVKanKan</string>
+  <string name="play_loading_txt">Loading...</string>
+  <string name="pic_loading_txt">Loading</string>
+  <string name="str_split">/</string>
+  <string name="str_durtion">00:00:00</string>
+  <string name="buf_loading_txt">Loading...</string>
+  <string name="connect_server_failed">Connect Server Failed</string>
+  <string name="download_image_failed">Download Image Failed</string>
+  <string name="app_name_title">Connect the Phone</string>
+  <string name="action_settings">Settings</string>
+  <string name="main_connectnum_tip">Connection established with %1s mobile</string>
+  <string name="main_connectnum_toast">There is %1s sets of mobile phone connected to the machine</string>
+  <string name="main_local_name">The machine name：%1s</string>
+  <string name="android_version">Android</string>
+  <string name="iphone_version">iPhone/IPad</string>
+  <string name="dialog_title">Select a name for this TV</string>
+  <string name="modify_tv_name">Modify the television</string>
+  <string name="modify_tv_name_success">Successful modification</string>
+  <string name="phone_connect">Phone Connect</string>
+  <string name="mutils_main_back">Back</string>
+  <string name="ready_to_play">Ready to play the movie...</string>
+  <string name="about">about us</string>
+  <string name="off">off</string>
+  <string name="official_website">official website：www.idpkk.com</string>
+  <string name="weibo">Micro-blog:@idpkk</string>
+  <string name="qq">QQ group：150976737</string>
+  <string name="installed_complete">Successfully installed</string>
+  <string name="install_failed">Installation failed</string>
+  <string name="installed">The installed</string>
+  <string name="download">Downloading</string>
+  <string name="install">Installation...</string>
+  <string name="app_viersion_name">The TV version%1s</string>
+  <string name="find">Search in the application desktop</string>
+  <string name="downloaded">The downloaded</string>
+  <string name="installIexplore">make sure support browser</string>
+  <string name="ip">local IP:%1s</string>
+  <string name="no_network">Please check the machine IP network</string>
+  <string name="not_connected_network"> Not connected to a network</string>
+  <string name="phone_cli_download">Scan the QR code to download</string>
+  <string name="phone_cli_open">Open mobile phone client \nSelect from the video page《TV play》:</string>
+  <string name="phone_tv_connect">Television,box,mobile connected to the same WiFi</string>
+  <string name="install_already">Letv has been preset this client, you do not need to install</string>
+  <string-array name="item_names">
+    <item> Living Room Box 1 </item>
+    <item> Living Room Box 2 </item>
+    <item> Bedroom Box 1 </item>
+    <item> Bedroom Box 2 </item>
+    <item> Bedroom Box 3 </item>
+    <item> Kitchen Box 1 </item>
+    <item> Kitchen Box 2 </item>
+    <item> Bathroom Box </item>
+    <item> Main Box </item>
+    <item> Office Box </item>
+  </string-array>
+  <string name="play_error">MediaPlayer error code: </string>
+  <string name="mirroring_error">MediaCodec error, or the mirroring function is not supported on this platform!</string>
+  <string name="clean_high">Lack of memory</string>
+  <string name="clean_middle">Lack of memory</string>
+  <string name="clean_low">Memory enough</string>
+  <string name="cleaning">Cleaning...</string>
+  <string name="cleaned">Done!</string>
+  <string name="clean_memory_btn_text">Immediately clean up</string>
+  <string name="download_background">Background download</string>
+</resources>

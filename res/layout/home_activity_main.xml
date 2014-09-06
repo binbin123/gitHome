@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg" >
+
+    <ImageView
+        android:id="@+id/app_ic"
+        android:layout_width="@dimen/app_ic_width"
+        android:layout_height="@dimen/app_ic_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/app_ic_marginTop"
+        android:src="@drawable/titleicon" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_ic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/main_appic_padding"
+        android:text="@string/app_name"
+        android:textColor="@color/text_white"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/connect_yh_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/main_connectnum_tip"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/textsize_biger"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_name"
+        android:layout_marginTop="@dimen/main_appname_padding"
+        android:gravity="center"
+        android:text="@string/app_viersion_name"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/textsize_titsmall" />
+
+    <TextView
+        android:id="@+id/local_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_appname_padding"
+        android:gravity="center"
+        android:text="@string/main_local_name"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/textsize_small"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/connect_phone"
+        android:layout_width="@dimen/main_btn_modifyname_width"
+        android:layout_height="@dimen/main_btn_modifyname_height"
+        android:layout_below="@+id/app_version"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/main_layout_marginTop"
+        android:background="@drawable/btn_select_bg"
+        android:onClick="onClick"
+        android:text="@string/phone_connect"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/textsize_small" />
+
+    <Button
+        android:id="@+id/modif_name"
+        android:layout_width="@dimen/main_btn_modifyname_width"
+        android:layout_height="@dimen/main_btn_modifyname_height"
+        android:layout_below="@+id/connect_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/main_modif_marginTop"
+        android:background="@drawable/btn_select_bg"
+        android:onClick="onClick"
+        android:text="@string/main_local_name"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/textsize_small" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="@dimen/main_btn_modifyname_width"
+        android:layout_height="@dimen/main_btn_modifyname_height"
+        android:layout_below="@+id/modif_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/main_modif_marginTop"
+        android:background="@drawable/btn_select_bg"
+        android:onClick="onClick"
+        android:text="@string/about"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="36dp"
+        android:text="@string/ip"
+        android:textColor="#7c7b7b"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/version_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/app_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/app_name"
+        android:background="@drawable/ic_screen_foot"
+        android:onClick="onClick"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/textsize_small" />
+
+</RelativeLayout>

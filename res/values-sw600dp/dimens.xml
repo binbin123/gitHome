@@ -1,0 +1,34 @@
+<!--
+ <resources>
+
+    
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+   
+    <dimen name="leftui_padding_left_one">40dp</dimen>
+    <dimen name="textsize_small">29sp</dimen>
+-->
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="leftui_leftmargin_one">133dp</dimen>
+    <dimen name="leftui_leftmargin_two">20dp</dimen>
+    <dimen name="rightui_rightmargin">50dp</dimen>
+    <dimen name="textsize_small">18sp</dimen>
+    <dimen name="textsize_biger">26sp</dimen>
+    <dimen name="text_openphone_padding_top">196dp</dimen>
+    <dimen name="button_divice_padding_top">348dp</dimen>
+    <dimen name="text_connect_margin_top">50dp</dimen>
+    <dimen name="line_margin_top">136dp</dimen>
+    <dimen name="line_with">16dp</dimen>
+    <dimen name="line_long">548dp</dimen>
+    <dimen name="text_right_padding_top">256dp</dimen>
+    <dimen name="code_imge_margin_top">70dp</dimen>
+    <dimen name="name_code_margin_top">12dp</dimen>
+    <dimen name="code_with_hight">174dp</dimen>
+    <dimen name="bt_divice_display_with">448dp</dimen>
+    <dimen name="bt_divice_display_hight">84dp</dimen>
+    <dimen name="divice_imge_with">76dp</dimen>
+
+</resources> <!-- </resources> -->

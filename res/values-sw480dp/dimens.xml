@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="playqueue_dialog_marginright">36dp</dimen>
+    <dimen name="playqueue_dialog_margintop">36dp</dimen>
+    <dimen name="playqueue_dialog_width">380dp</dimen>
+    <dimen name="playqueue_dialog_height">140dp</dimen>
+</resources>

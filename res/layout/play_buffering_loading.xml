@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_buffering_loading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/video_buffer_bg"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:visibility="invisible" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/buffering_loading_progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/play_buffering_loading_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buffering_loading_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:text="@string/play_loading_txt"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

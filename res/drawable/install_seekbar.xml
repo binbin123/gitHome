@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+android:id/background"
+        android:drawable="@drawable/scrubber_bg"/>
+    <!-- <item
+        android:id="@+android:id/progress"
+        android:drawable="@drawable/progress_bar_vertica_9l"/> -->
+        
+    
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/scrubber_primary" />
+      </item> 
+    
+
+       
+    
+
+</layer-list>

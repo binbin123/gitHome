@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:focusable="false"
+            android:paddingTop="20dp"
+            android:text="@string/update_title"
+            android:textColor="@color/update_text_color"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/text_update_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:paddingLeft="20dp"
+            android:textColor="@color/update_text_color"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/text_update_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/update_text_color"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_update_now"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/main_btn_modifyname_height"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_select_bg"
+                android:text="@string/update"
+                android:textColor="@color/update_text_color"
+               android:textSize="@dimen/textsize_small" >
+
+                <requestFocus />
+            </Button>
+
+            <Button
+                android:id="@+id/button_update_not"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/main_btn_modifyname_height"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_select_bg"
+                android:text="@string/update_later"
+                android:textColor="@color/update_text_color"
+                android:textSize="@dimen/textsize_small" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <requestFocus />
+
+</FrameLayout>

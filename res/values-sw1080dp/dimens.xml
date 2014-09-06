@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="leftui_leftmargin_one">240dp</dimen>
+    <dimen name="leftui_leftmargin_two">225dp</dimen>
+    <dimen name="rightui_rightmargin">90dp</dimen>
+    <dimen name="textsize_small">39sp</dimen>
+    <dimen name="textsize_biger">60sp</dimen>
+    <dimen name="text_openphone_padding_top">294dp</dimen>
+    <dimen name="button_divice_padding_top">522dp</dimen>
+    <dimen name="text_connect_margin_top">75dp</dimen>
+    <dimen name="line_margin_top">204dp</dimen>
+    <dimen name="line_with">24dp</dimen>
+    <dimen name="line_long">822dp</dimen>
+    <dimen name="text_right_padding_top">384dp</dimen>
+    <dimen name="code_imge_margin_top">104dp</dimen>
+    <dimen name="name_code_margin_top">18dp</dimen>
+    <dimen name="code_with_hight">260dp</dimen>
+    <dimen name="bt_divice_display_with">672dp</dimen>
+    <dimen name="bt_divice_display_hight">126dp</dimen>
+    <dimen name="divice_imge_with">114dp</dimen>
+
+</resources>

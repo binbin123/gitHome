@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:gravity="center"
+    >
+
+    <WebView
+        android:id="@+id/webview_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"   
+    />
+    
+    <LinearLayout
+        android:id="@+id/loading_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/loading_progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dip"
+            android:indeterminate="true"
+            android:padding="0dip" />
+
+        <TextView
+            android:id="@+id/loading_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="0dip"
+            android:padding="0dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/tertiary_text_light" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <!-- 音频播放界面 -->
+
+    <RelativeLayout
+        android:id="@+id/player_view_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/player_audio_push_cover_base"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/player_view_music_image_disk"
+            android:layout_width="152dp"
+            android:layout_height="308dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="400dp"
+            android:layout_marginTop="159dp"
+            android:background="@anim/animation_disk" />
+
+        <TextView
+            android:id="@+id/player_view_music_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_view_music_image_disk"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <FrameLayout
+            android:id="@+id/player_view_music_layout_out"
+            android:layout_width="252dp"
+            android:layout_height="252dp"
+            android:layout_marginLeft="455dp"
+            android:layout_marginTop="187dp" >
+
+            <RelativeLayout
+                android:id="@+id/player_view_music_layout_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/player_audio_push_cover_shadow"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:id="@+id/player_view_music_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/player_view_music_reflect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/player_view_music_logo"
+                    android:layout_alignTop="@id/player_view_music_logo"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp" />
+            </RelativeLayout>
+<!--
+            <ImageView
+                android:id="@+id/player_view_music_logo_default"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/player_audio_push_base_logo"
+                android:visibility="visible" />
+-->               
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!-- 音量调节 -->
+
+
+    <!-- 视频播放界面 -->
+
+    <RelativeLayout
+        android:id="@+id/player_view_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <!-- 播放界面 -->
+
+        <SurfaceView
+            android:id="@+id/player_view_video_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:visibility="invisible" />
+
+        <!-- 暂停播放按钮 -->
+
+        <ImageView
+            android:id="@+id/player_view_video_center_btn"
+            android:layout_width="124dip"
+            android:layout_height="124dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_center_btn"
+            android:visibility="invisible" />
+
+        <!-- 缓冲progressbar -->
+
+        <ProgressBar
+            android:id="@+id/player_view_video_center_progressbar"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <!-- 播放进度条 -->
+
+        <RelativeLayout
+	        android:id="@+id/player_view_video_ctrl"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:visibility="gone" >
+				<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/playbar_bg_letv" />
+         <ImageView
+            android:id="@+id/player_view_video_ctrl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/ic_playbar_button_play"
+            android:focusable="false" />
+ 
+        <TextView
+            android:id="@+id/player_view_video_ctrl_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="30dip"
+            android:focusable="false"
+            android:paddingLeft="30dip"
+            android:text="@string/str_durtion"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" /> 
+        
+         <letv.widget.LetvControllerSeekBar
+            android:id="@+id/player_view_video_ctrl_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-22dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/player_view_video_ctrl_total_time"
+            android:layout_toRightOf="@id/player_view_video_ctrl_image"
+            android:focusable="false"
+            android:paddingLeft="48dip"
+            android:paddingRight="48dip"
+            android:progress="0"
+            android:thumbOffset="0dip" />   
+        
+    	</RelativeLayout>
+    </RelativeLayout>
+    <!-- yh -->
+
+    <RelativeLayout
+        android:id="@+id/player_view_sound"
+        android:layout_width="220dp"
+        android:layout_height="105dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/play_vol_bg"
+        android:paddingBottom="15dp"
+        android:paddingTop="2dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/player_view_video_sound_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/play_sound_on_ico" />
+
+            <TextView
+                android:id="@+id/player_view_video_sound_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+        </RelativeLayout>
+
+        <com.letv.airplay.VolumeProgressBar
+            android:id="@+id/player_view_video_sound_volume"
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg"
+    android:orientation="vertical"
+    tools:context="com.letv.screenui.activity.HomeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pic_three" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/connect_relativeLayout_back_Left" >
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/connect_relativeLayout_back_marginTop"
+                android:src="@drawable/ic_connection" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/connect_layout_marginleft"
+                android:layout_marginTop="@dimen/connect_relativeLayout_back_marginTop"
+                android:layout_toRightOf="@+id/ImageView1"
+                android:text="@string/app_name_title"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/textsize_biger" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_back"
+            android:layout_marginTop="@dimen/connect_im_margintop"
+            android:src="@drawable/screen_line" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_back1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginLeft="@dimen/connect_relativeLayout_back1_Left"
+            android:layout_marginTop="@dimen/connect_relativeLayout_back1_top" >
+
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/connect_ImageView_top"
+                android:src="@drawable/pic_one" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/connect__textViewlift"
+                android:layout_marginTop="@dimen/connect__textViewtop"
+                android:layout_toRightOf="@+id/ImageView"
+                android:text="@string/phone_cli_download"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/textsize_bigers" />
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="@dimen/connect__im_top"
+                android:layout_toRightOf="@+id/textView"
+                android:src="@drawable/pic_two" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/connect__im_left"
+                android:layout_marginTop="@dimen/connect__textView2top"
+                android:layout_toRightOf="@+id/ImageView2"
+                android:text="@string/phone_cli_open"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/textsize_bigers" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ph_dw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_back1"
+            android:layout_marginLeft="@dimen/connect__phdw_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1.0"
+                    android:gravity="left" >
+
+                    <include
+                        android:layout_weight="0.86"
+                        layout="@layout/connect_rightui" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/connect__fg"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.79"
+                    android:background="@android:color/transparent" >
+
+                    <TextView
+                        android:id="@+id/textView2ff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/connect__textView2fflf"
+                        android:layout_marginTop="@dimen/connect__textView2fftop"
+                        android:text="@string/phone_tv_connect"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/textsize_titsmall" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/yh_back"
+            android:layout_width="@dimen/main_btn_modifyname_width"
+            android:layout_height="@dimen/main_btn_modifyname_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/connect__yhback_bottom"
+            android:background="@drawable/focus_highlight"
+            android:onClick="onClick"
+            android:text="@string/mutils_main_back"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textsize_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

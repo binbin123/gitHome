@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+
+    <dimen name="playqueue_dialog_marginright">36dp</dimen>
+    <dimen name="playqueue_dialog_margintop">36dp</dimen>
+    <dimen name="playqueue_dialog_width">360dp</dimen>
+    <dimen name="playqueue_dialog_height">120dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="leftui_leftmargin_one">160dp</dimen>
+    <dimen name="leftui_leftmargin_two">100dp</dimen>
+    <dimen name="rightui_rightmargin">60dp</dimen>
+    <dimen name="textsize_small">26sp</dimen>
+    <dimen name="textsize_biger">40sp</dimen>
+    <dimen name="text_openphone_padding_top">196dp</dimen>
+    <dimen name="button_divice_padding_top">348dp</dimen>
+    <dimen name="text_connect_margin_top">50dp</dimen>
+    <dimen name="line_margin_top">136dp</dimen>
+    <dimen name="line_with">16dp</dimen>
+    <dimen name="line_long">548dp</dimen>
+    <dimen name="text_right_padding_top">256dp</dimen>
+    <dimen name="code_imge_margin_top">70dp</dimen>
+    <dimen name="name_code_margin_top">12dp</dimen>
+    <dimen name="code_with_hight">174dp</dimen>
+    <dimen name="bt_divice_display_with">448dp</dimen>
+    <dimen name="bt_divice_display_hight">84dp</dimen>
+    <dimen name="divice_imge_with">76dp</dimen>
+
+    <!-- new -->
+    <!-- sigleitem -->
+
+    <dimen name="sigleitem_padding_bottom">10dp</dimen>
+    <dimen name="sigleitem_padding_left">50dp</dimen>
+    <dimen name="sigleitem_padding_top">10dp</dimen>
+    <dimen name="sigleitem_padding_right">50dp</dimen>
+    <dimen name="sigleitem_width">444dp</dimen>
+    <dimen name="sigleitem_height">124dp</dimen>
+    <!-- main.xml -->
+    <dimen name="main_appname_padding">20dp</dimen>
+    <dimen name="main_frame_margintop">40dp</dimen>
+    <dimen name="main_tv_modifyname_width">380dp</dimen>
+    <dimen name="main_tv_modifyname_height">60dp</dimen>
+    <dimen name="main_btn_modifyname_width">444dp</dimen>
+    <dimen name="main_btn_modifyname_height">124dp</dimen>
+    <!-- local_name.xml -->
+    <dimen name="dialog_width">912dp</dimen>
+    <dimen name="dialog_height">500dp</dimen>
+    <dimen name="dialog_title_padding">20dp</dimen>
+    <dimen name="dialog_listview_width">788dp</dimen>
+    <dimen name="dialog_listview_height">380dp</dimen>
+    <dimen name="dialog_listview_margin_bottom">64dp</dimen>
+    <dimen name="dialog_listview_divider_height">20dp</dimen>
+    <dimen name="dialog_listview_padding_bottom">20dp</dimen>
+    <dimen name="dialog_listview_padding_top">20dp</dimen>
+    <dimen name="dialog_listview_padding_left">170dp</dimen>
+    <dimen name="dialog_listview_padding_right">170dp</dimen>
+
+    <!-- home_activity_main.xml -->
+
+    <dimen name="app_ic_width">134dp</dimen>
+    <dimen name="app_ic_height">134dp</dimen>
+    <dimen name="app_ic_marginTop">100dp</dimen>
+    <dimen name="linearLayout_marginTop">28dp</dimen>
+    <dimen name="thumb_position_font_size">20dp</dimen>
+    <dimen name="thumb_position_font_x">8dp</dimen>
+    <dimen name="thumb_position_font_y">25dp</dimen>
+
+</resources>
