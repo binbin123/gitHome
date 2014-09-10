@@ -1,4 +1,4 @@
-package com.letv.airplay;
+﻿package com.letv.airplay;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -111,9 +111,11 @@ public class VolumeProgressBar extends ImageView {
 	}
 
 	public int getProgress() {
+		
+	}
+	public int gottProgress() {
 		return progress;
 	}
-	
 	public void setProgressAtStart(int progress){	  
 	  this.progress = progress;
 	}
