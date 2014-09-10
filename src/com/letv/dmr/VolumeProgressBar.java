@@ -119,7 +119,7 @@ public class VolumeProgressBar extends ImageView {
 	}
 
 	public void setProgress(int progress) {
-    Debug.d(TAG, "setProgress " + progress);
+  
 		if (progress >= 0 && progress <= max) {
 			this.progress = progress;
 			invalidate();
