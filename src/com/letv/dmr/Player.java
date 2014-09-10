@@ -128,7 +128,9 @@ public class Player implements OnBufferingUpdateListener, OnCompletionListener,
 		Drawable newThumb = new BitmapDrawable(activity.getResources(), bitmap);
 		return newThumb;
 	}
-
+/**
+ * today
+ */
 	Handler handleProgress = new Handler() {
 		public void handleMessage(Message msg) {
 
